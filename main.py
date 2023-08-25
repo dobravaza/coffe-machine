@@ -56,17 +56,17 @@ def make_coffe(water_needed, milk_needed, coffee_needed, cost, user_choice, mone
                 print(f"Making a {user_choice} for you :)")
                 counting_coins = False
                 resources["final_money"] += money
-
+                print("Here is your latte. Enjoy!")
             elif money >= cost:
                 rest_of_the_money = money - cost
                 print(f"Returning money for you {rest_of_the_money}")
                 resources["final_money"] -= rest_of_the_money
                 counting_coins = False
-
+                print("Here is your latte. Enjoy!")
         else:
             print("Try again with a correct coin")
         compare_ingredients(water_needed, milk_needed, coffee_needed)
-        print("Here is your latte. Enjoy!")
+
 
 
 
